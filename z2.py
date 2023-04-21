@@ -9,15 +9,15 @@
 # print(a//100 + a//10%10 + a%10)
 # или
 
-num = input('Введите трёхзначное число: ')
-res = 0
 
-
-if len(num) == 3:
-    for i in num:
-        res += int(i)
-    print(res)
-
-else:
-    print('Вы ввели не трёхзначное число')
+while True:
     num = input('Введите трёхзначное число: ')
+    res = 0
+
+    if len(num) == 3:
+        for i in num:
+            res += int(i)
+        print(res)
+        break
+    else:
+        print('Вы ввели не трёхзначное число')
